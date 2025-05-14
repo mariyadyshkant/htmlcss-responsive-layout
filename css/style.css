@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .title {
     font-family: "Nerko One", cursive;
     font-weight: 400;
@@ -11,6 +16,7 @@
     font-size: 3rem;
     color: #FE9614;
     text-shadow: 1px 1px rgb(171, 169, 169);
+
 }
 
 .regular {
@@ -33,6 +39,14 @@
     font-weight: 200;
     font-style: normal;
     color: gray;
+    text-align: left;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4E3969
 }
 
 .regular_bold {
@@ -42,7 +56,47 @@
     font-style: normal;
 }
 
+
+
 :root {
     --primary-color: #4E3969;
     --secondary-color: #7C69A4;
+}
+
+.debug {
+    background-color: #F6F5F3;
+
+    .container,
+    .row,
+    .col {
+        border: solid 1px green;
+    }
+}
+
+header {
+    background-color: white;
+}
+
+.container {
+    width: 95%;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.presentation {
+    img {
+        max-height: 150px;
+        float: left;
+    }
 }
