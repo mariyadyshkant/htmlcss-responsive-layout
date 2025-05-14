@@ -26,6 +26,7 @@ img {
     font-weight: 300;
     font-style: normal;
     font-size: 0.9rem;
+    line-height: 1.5rem;
 }
 
 .black {
@@ -166,12 +167,35 @@ header {
 }
 
 .presentation {
-    display: inline-block;
+    flex-direction: column;
 
     img {
+        margin: 0.5rem;
         max-height: 150px;
-        float: left;
     }
+}
+
+.row.social {
+    flex-grow: 1;
+}
+
+.icons {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 8px 8px 0px lightgrey;
+    width: 15%;
+    text-align: center;
+}
+
+.text_icons {
+    display: none;
+}
+
+hr {
+    width: 50px;
+    border-top: 1.2px solid rgb(255, 162, 0);
+    /* border-bottom: 1px solid rgb(255, 162, 0); */
 }
 
 /* MEDIA QUERIES */
@@ -183,6 +207,11 @@ header {
     .title {
         text-align: center;
     }
+
+    .banner {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -196,6 +225,17 @@ header {
     .container {
         width: 90%;
     }
+
+    .presentation {
+        display: inline-block;
+
+        img {
+            max-height: 150px;
+            float: left;
+        }
+    }
+
+
 
     /* #region COL DIMENSION */
     .col-sm-1 {
@@ -260,6 +300,10 @@ header {
         line-height: 2.3rem;
     }
 
+    .icons {
+        width: 18%;
+    }
+
     /* #region COL DIMENSION */
     .col-md-1 {
         width: calc(100% / 12 * 1);
@@ -312,3 +356,63 @@ header {
     /* #endregion COL DIMENSION */
 
 }
+
+@media screen and (min-width: 992px) {
+    .text_icons {
+        display: inline-block;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    /* #region COL DIMENSION */
+    .col-lg-1 {
+        width: calc(100% / 12 * 1);
+    }
+
+    .col-lg-2 {
+        width: calc(100% / 12 * 2);
+    }
+
+    .col-lg-3 {
+        width: calc(100% / 12 * 3);
+    }
+
+    .col-lg-4 {
+        width: calc(100% / 12 * 4);
+    }
+
+    .col-lg-5 {
+        width: calc(100% / 12 * 5);
+    }
+
+    .col-lg-6 {
+        width: calc(100% / 12 * 6);
+    }
+
+    .col-lg-7 {
+        width: calc(100% / 12 * 7);
+    }
+
+    .col-lg-8 {
+        width: calc(100% / 12 * 8);
+    }
+
+    .col-lg-9 {
+        width: calc(100% / 12 * 9);
+    }
+
+    .col-lg-10 {
+        width: calc(100% / 12 * 10);
+    }
+
+    .col-lg-11 {
+        width: calc(100% / 12 * 11);
+    }
+
+    .col-lg-12 {
+        width: calc(100% / 12 * 12);
+    }
+
+    /* #endregion COL DIMENSION */
